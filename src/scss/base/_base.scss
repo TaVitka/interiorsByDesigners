@@ -120,3 +120,16 @@ body {
     }
   }
 }
+
+.desc {
+  max-width: 950px;
+  width: 100%;
+  margin-bottom: 0;
+  font-size: clamp(24px, 1vw, 32px);
+  color: var(--color-white);
+
+  &--reverse {
+    color: var(--color-dark-900-50);
+    margin-bottom: rem(78);
+  }
+}

@@ -13,13 +13,6 @@
     padding-bottom: rem(156);
   }
 
-  p {
-    margin-bottom: 0;
-    max-width: 950px;
-    width: 100%;
-    font-size: clamp(24px, 1vw, 32px);
-  }
-
   &__image {
     min-height: 400px;
     padding-bottom: rem(64);

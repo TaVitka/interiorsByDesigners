@@ -5,14 +5,6 @@
   padding: rem(64) 0 rem(156);
   background-color: var(--color-cream-400);
 
-  &__desc {
-    color: var(--color-dark-900-50);
-    margin-bottom: rem(78);
-    max-width: 950px;
-    width: 100%;
-    font-size: clamp(24px, 1vw, 32px);
-  }
-
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
