@@ -15,3 +15,9 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+@mixin hero-background {
+  background-position: bottom right;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
