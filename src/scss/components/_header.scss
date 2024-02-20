@@ -5,9 +5,9 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  padding: clamp(12px, rem(20), 22px) 0;
+  padding: clamp(24px, rem(20), 34px) 0;
   width: 100%;
-  background-color: var(--color-white);
+  background-color: var(--color-dark-900);
   transition-property: transform, padding;
   transition-duration: 0.15s;
 

@@ -43,7 +43,7 @@
 
   &__item {
     &:not(:last-of-type, .footer .nav__item) {
-      margin-right: rem(40);
+      margin-right: rem(34);
 
       @include media(mobile-l) {
         margin-right: 0;
@@ -58,11 +58,17 @@
   &__link {
     font-weight: var(--fw-500);
     font-size: 20px;
-    color: var(--color-tile-800);
 
     &.true {
-      border-bottom: 2px solid var(--color-tile-800);
+      border-bottom: 2px solid var(--color-white);
     }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 24px;
   }
 
   .btn {

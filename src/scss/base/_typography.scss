@@ -8,7 +8,7 @@ h3 {
 
   overflow: hidden;
   width: fit-content;
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-primary);
   font-size: clamp(2.5rem, 2.2451rem + 1.0458vi, 3.5rem);
 
   @include media(mobile-m) {
@@ -18,23 +18,25 @@ h3 {
 
 a,
 button {
-  --font-weight: 400;
+  --font-weight: 500;
 
   font-family: var(--font-family-primary);
 }
 
 h2 {
-  font-size: clamp(40px, 2rem + 1vi, 56px);
-  text-transform: capitalize;
-  color: var(--color-tile-800);
+  font-size: clamp(32px, 2rem + 1vi, 40px);
+  text-transform: uppercase;
+  color: var(--color-white);
 }
 
 h3 {
-  font-size: clamp(32px, 2rem + 1vi, 40px);
+  --font-weight: 700;
+
+  font-size: clamp(24px, 2rem + 1vi, 32px);
   text-transform: capitalize;
-  color: var(--color-tile-800);
+  color: var(--color-black);
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
 }
