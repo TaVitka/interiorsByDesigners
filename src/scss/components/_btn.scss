@@ -47,6 +47,19 @@
      &:hover::after {
        filter: invert(1);
      }
+
+     &-reverse {
+       color: var(--color-black);
+       border-color: var(--color-black);
+
+       &::after {
+         filter: invert(1);
+       }
+
+       &:hover {
+         border-color: var(--color-white);
+       }
+     }
    }
 
    &--reverse {

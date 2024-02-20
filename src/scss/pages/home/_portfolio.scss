@@ -1,0 +1,22 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.portfolio {
+  background: var(--gradient-primary);
+  padding: 0 0 rem(156);
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: rem(48);
+  }
+
+  h2 {
+    font-family: var(--font-family-secondary);
+    font-weight: var(--fw-400);
+    font-size: clamp(136px, 1vw, 140px);
+    color: var(--color-dark-900);
+    text-transform: lowercase;
+  }
+}
