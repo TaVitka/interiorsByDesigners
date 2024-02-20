@@ -3,105 +3,134 @@
 
 .hero {
   $root: &;
-  padding: rem(37) 0;
+  margin-bottom: 72px;
+  padding: 0 0 rem(128);
+  @include left-background;
+
 
   &__inner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-end;
     overflow: hidden;
-    border-radius: calc(var(--radius-main) * 2);
-    min-height: 584px;
-    background-position: 0 0;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
   &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     z-index: 1;
-    padding: 0 rem(67);
     width: 100%;
-    max-width: 720px;
+    max-width: 1076px;
     color: var(--color-white);
   }
 
-  h1 {
-    margin-bottom: 24px;
-    font-size: clamp(2rem, 1.6176rem + 1.3vi, 3rem);
-    line-height: 1.07;
+  &__info {
+    max-width: 416px;
   }
 
-  p {
-    margin-bottom: rem(40);
+  &__subtitle {
+    max-width: 322px;
+    width: 100%;
+    font-weight: var(--fw-600);
+    margin-bottom: 16px;
     font-size: 24px;
+  }
+
+  &__desc {
+    max-width: 322px;
+    width: 100%;
+    margin-bottom: rem(138);
+    font-size: 18px;
     letter-spacing: 0.003em;
   }
 
-  &--services {
-    padding-bottom: rem(82);
-    color: #000;
-    background-color: var(--color-gray-400);
+  &__btn {
+    font-weight: var(--fw-500);
+    font-size: 32px;
+    border-width: 4px;
+    padding: 38px rem(100) 38px rem(28);
+    max-width: 420px;
+    width: 100%;
 
-    #{$root}__inner {
-      padding: rem(68) 0;
-      min-height: 745px;
-
-      h1 {
-        margin-bottom: rem(27);
-        color: var(--color-tile-800);
-      }
-    }
-
-    #{$root}__content {
-      max-width: 600px;
-    }
-
-    .overlay {
-      &::before {
-        display: none;
-      }
-    }
-
-    p {
-      margin-bottom: rem(25);
-      font-size: 20px;
-      line-height: 1.4;
-      color: var(--color-gray-700);
+    &::after {
+      right: rem(28);
+      width: 64px;
+      height: 64px;
     }
   }
 
-  &--about {
-    padding-bottom: rem(100);
-
-    #{$root}__content {
-      translate: 0 25px;
-    }
-
-    @include media(mobile-l) {
-      .hero__inner {
-        position: relative;
-        padding: 20px 0;
-        background-position: bottom center;
-        background-size: cover;
-
-        &::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background-color: var(--color-black);
-          opacity: 0.7;
-        }
-      }
-    }
+  h1 {
+    font-family: var(--font-family-secondary);
+    font-weight: var(--fw-400);
+    line-height: 1.5;
   }
 
-  &--contact {
-    padding-bottom: rem(84);
-
-    #{$root}__content {
-      translate: 0 25px;
-    }
-  }
+  //&--services {
+  //  padding-bottom: rem(82);
+  //  color: #000;
+  //  background-color: var(--color-gray-400);
+  //
+  //  #{$root}__inner {
+  //    padding: rem(68) 0;
+  //    min-height: 745px;
+  //
+  //    h1 {
+  //      margin-bottom: rem(27);
+  //      color: var(--color-tile-800);
+  //    }
+  //  }
+  //
+  //  #{$root}__content {
+  //    max-width: 600px;
+  //  }
+  //
+  //  .overlay {
+  //    &::before {
+  //      display: none;
+  //    }
+  //  }
+  //
+  //  p {
+  //    margin-bottom: rem(25);
+  //    font-size: 20px;
+  //    line-height: 1.4;
+  //    color: var(--color-gray-700);
+  //  }
+  //}
+  //
+  //&--about {
+  //  padding-bottom: rem(100);
+  //
+  //  #{$root}__content {
+  //    translate: 0 25px;
+  //  }
+  //
+  //  @include media(mobile-l) {
+  //    .hero__inner {
+  //      position: relative;
+  //      padding: 20px 0;
+  //      background-position: bottom center;
+  //      background-size: cover;
+  //
+  //      &::before {
+  //        content: "";
+  //        position: absolute;
+  //        inset: 0;
+  //        background-color: var(--color-black);
+  //        opacity: 0.7;
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //&--contact {
+  //  padding-bottom: rem(84);
+  //
+  //  #{$root}__content {
+  //    translate: 0 25px;
+  //  }
+  //}
 
   @include media(tablet) {
     padding: 0;

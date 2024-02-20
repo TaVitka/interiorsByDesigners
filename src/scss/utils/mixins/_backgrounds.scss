@@ -9,3 +9,9 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+@mixin left-background {
+  background-position: center left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
