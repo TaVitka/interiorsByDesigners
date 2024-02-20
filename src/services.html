@@ -3,25 +3,23 @@
 <include src="./html/_head.html" locals='{"title": "Services"}'></include>
 
 <body class="page__body">
-  <div class="site-container">
-    <include src="./html/_header.html" locals='{"page": "services"}'></include>
+<div class="site-container">
+  <include src="./html/_header.html" locals='{"page": "services"}'></include>
 
-    <main class="main">
-      <include src="./html/services/_hero.html"></include>
+  <main class="main">
+    <include src="./html/services/_hero.html"></include>
 
-      <div class="container">
+    <include src="./html/services/_services.html"></include>
 
-        <include src="./html/services/_services.html"></include>
 
-        <include src="./html/services/_faq.html"></include>
+    <div class="container">
+      <include src="./html/home/_request.html"></include>
+    </div>
+</main>
 
-      </div>
+<include src="./html/_footer.html"></include>
 
-    </main>
-
-    <include src="./html/_footer.html"></include>
-
-  </div>
+</div>
 </body>
 
 </html>
