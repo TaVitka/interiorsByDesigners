@@ -1,43 +1,36 @@
 <section class="request request--contact">
   <div class="container">
 
-    <h2>
-      Contact Information
+    <h2 class="title">
+      REQUEST A SERVICE
     </h2>
 
-    <h3>
-      Elite Roof Works
-    </h3>
-
-    <a href="mailto:eliteroofworks@gmail.com">
-      eliteroofworks@gmail.com
-    </a>
-
     <form class="request__form">
-      <p>
-        Drop us a message, and we'll get back to you promptly
-      </p>
-
-      <div class="request__form-box">
+      <div class="request__form-field">
         <label>
-          <input type="text" placeholder="Name">
+          <input name="email"
+                 type="email"
+                 placeholder="Enter Email"
+                 required>
         </label>
 
         <label>
-          <input type="tel" placeholder="Phone number">
+          <input name="tel"
+                 type="tel"
+                 placeholder="Enter Phone Number"
+                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                 required>
         </label>
       </div>
 
       <label>
-        <input type="email" placeholder="E-mail Address">
+        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
       </label>
 
-      <label>
-        <textarea name="message" id="message" placeholder="Your message here"></textarea>
-      </label>
-
-      <button class="btn" type="button">
-        Send Message
+      <button class="btn btn--reverse" type="submit">
+          <span>
+            Submit
+          </span>
       </button>
     </form>
 

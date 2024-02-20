@@ -28,7 +28,8 @@
     align-items: center;
   }
 
-  input {
+  input,
+  textarea {
     display: block;
     min-width: 534px;
     max-width: 534px;
@@ -43,8 +44,41 @@
     color: var(--color-cream-600);
   }
 
+  textarea {
+    background: transparent;
+    line-height: 1.2;
+    margin-bottom: rem(56);
+    max-width: unset;
+    height: 162px;
+  }
+
   .btn {
     height: 60px;
+  }
+
+  &--contact {
+    .title {
+      margin-bottom: 64px;
+    }
+
+    .request__form {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .request__form-field {
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+
+    input {
+      max-width: 632px;
+      min-width: 632px;
+    }
+
+    .btn {
+      max-width: unset;
+    }
   }
 
   @include media(tablet) {

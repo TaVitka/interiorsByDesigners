@@ -102,6 +102,7 @@
   &--services {
     padding: rem(160) 0 rem(258);
   }
+
   &--portfolio {
     padding: rem(64) 0 rem(64);
     @include left-background;
@@ -109,6 +110,7 @@
 
     .hero__inner {
       padding-right: rem(48);
+      padding-top: rem(48);
       align-items: flex-end;
     }
 
