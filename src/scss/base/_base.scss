@@ -99,6 +99,7 @@ body {
   position: relative;
   padding-left: rem(90);
   margin-bottom: 16px;
+  font-weight: var(--fw-600);
 
   &::before {
     content: "";
@@ -109,5 +110,13 @@ body {
     height: 2px;
     width: rem(72);
     background-color: var(--color-white);
+  }
+
+  &--reverse {
+    color: var(--color-dark-900);
+
+    &::before {
+      background-color: var(--color-dark-900);
+    }
   }
 }
