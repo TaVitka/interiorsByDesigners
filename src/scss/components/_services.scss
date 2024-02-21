@@ -67,39 +67,4 @@
       gap: 60px 24px;
     }
   }
-
-  @include media(tablet) {
-    padding: rem(60) 0;
-
-    &__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    &__item {
-      &:last-child {
-        grid-column: 1 / span 2;
-      }
-    }
-  }
-
-  @include media(mobile-l) {
-    &__grid {
-      grid-template-columns: 1fr;
-    }
-
-    &__item {
-      padding: 24px;
-      padding-top: 96px;
-
-      &:last-child {
-        grid-column: auto;
-      }
-    }
-  }
-
-  @include media(mobile-m) {
-    .btn {
-      max-width: none;
-    }
-  }
 }

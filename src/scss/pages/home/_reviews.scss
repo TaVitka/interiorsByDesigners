@@ -57,9 +57,4 @@
     border-radius: var(--radius-main);
     margin-right: 16px;
   }
-
-
-  @include media(tablet) {
-    padding: rem(60) 0;
-  }
 }

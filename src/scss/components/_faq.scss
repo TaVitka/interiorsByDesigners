@@ -65,16 +65,4 @@
   a {
     margin: 0 auto;
   }
-
-  @include media(mobile-l) {
-    padding: 30px 0;
-
-    summary {
-      line-height: 1.2;
-    }
-
-    br {
-      display: none;
-    }
-  }
 }

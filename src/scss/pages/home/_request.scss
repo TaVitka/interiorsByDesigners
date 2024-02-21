@@ -80,21 +80,4 @@
       max-width: unset;
     }
   }
-
-  @include media(tablet) {
-    padding: rem(60) 0;
-
-    &__form {
-      margin-bottom: 20px;
-    }
-  }
-
-  @include media(mobile-m) {
-
-    &__form-field {
-      flex-direction: column;
-      gap: 5px;
-    }
-
-  }
 }

@@ -1,5 +1,6 @@
 <header class="header">
   <div class="container">
+
     <nav class="nav">
       <a class="logo" href="index.html">
         <img class="logo__img" src="images/logo.svg" alt="Interiors by designers logo" width="205" height="48">
@@ -47,14 +48,15 @@
             Make a Request
           </button>
         </div>
+
       </div>
     </nav>
+
   </div>
 </header>
 
 
 <script>
-
   const startHeightValue = () => {
     let vh = window.innerHeight * 1;
     document.querySelector(':root').style.setProperty('--vh', `${vh}px`);
@@ -73,5 +75,4 @@
   window.addEventListener('scroll', startHeightValue);
 
   startHeightValue();
-
 </script>

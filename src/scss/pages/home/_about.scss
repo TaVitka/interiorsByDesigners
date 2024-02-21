@@ -26,42 +26,4 @@
       height: 100%;
     }
   }
-
-  @include media(tablet) {
-    padding: rem(60) 0;
-
-    &__inner {
-      min-height: auto;
-    }
-
-    &__box {
-      padding: rem(30);
-      padding-right: 0;
-    }
-  }
-
-  @include media(mobile-l) {
-
-    &__inner {
-      border-radius: 0;
-    }
-
-    &__image {
-      position: relative;
-      border-radius: 0;
-    }
-
-    &__box {
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-    }
-
-
-    .overlay {
-      &::before {
-        display: none;
-      }
-    }
-  }
 }

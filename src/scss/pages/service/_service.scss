@@ -65,36 +65,4 @@
   .btn {
     margin: 0 auto;
   }
-
-  @include media(mobile-l) {
-    padding: 30px 0;
-
-    &__list {
-      margin-bottom: 30px;
-    }
-
-    &__grid {
-      grid-template-columns: 1fr;
-      column-gap: 0;
-
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
-
-      &:nth-child(even) {
-        #{$root}__image {
-          grid-column: auto;
-        }
-
-        #{$root}__content {
-          grid-column: auto;
-          grid-area: auto;
-        }
-      }
-    }
-
-    &__content {
-      padding: 20px;
-    }
-  }
 }
