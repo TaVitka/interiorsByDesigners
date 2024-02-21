@@ -66,6 +66,7 @@
   }
 
   &--page {
+    margin-bottom: 0;
     padding: rem(86) 0 rem(152);
     @include hero-background;
 
@@ -89,6 +90,7 @@
 
     .hero__subtitle {
       font-family: var(--font-family-primary);
+      font-weight: var(--fw-600);
       margin-bottom: 24px;
       font-size: 32px;
     }
@@ -104,6 +106,7 @@
   }
 
   &--portfolio {
+    margin-bottom: 72px;
     padding: rem(64) 0 rem(64);
     @include left-background;
     min-height: 650px;
@@ -114,5 +117,10 @@
       align-items: flex-end;
     }
 
+  }
+
+  &--works {
+    padding: rem(64) 0;
+    min-height: 710px;
   }
 }

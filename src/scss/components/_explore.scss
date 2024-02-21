@@ -36,6 +36,19 @@
       color: var(--color-black);
     }
   }
+
+  &--works {
+    background: var(--color-white);
+
+    .title {
+      margin-bottom: rem(76);
+    }
+
+    .swiper,
+    .explore__slider .slide__image {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .explore__slider {

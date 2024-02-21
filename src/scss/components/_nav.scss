@@ -77,9 +77,14 @@
     }
   }
 
-  @include media(mobile-l) {
+  @include media(desktop) {
     .logo {
-      max-width: 58px;
+      max-width: 150px;
     }
+
+  }
+
+  @include media(mobile-l) {
+
   }
 }
