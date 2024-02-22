@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(32px, 2rem + 1vi, 40px);
+  font-size: clamp(30px, 2rem, 32px);
   text-transform: uppercase;
   color: var(--color-white);
 }
@@ -42,4 +42,8 @@ h3 {
 
 p {
   font-size: 18px;
+
+  @include media(tablet) {
+    font-size: 16px;
+  }
 }

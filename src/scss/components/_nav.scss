@@ -12,21 +12,26 @@
     justify-content: flex-end;
     width: 100%;
 
-    @include media(mobile-l) {
+    @include media(tablet) {
       position: fixed;
-      left: 0;
       top: 0;
       z-index: -1;
-      flex-direction: column;
-      justify-content: flex-start;
       overflow-y: auto;
       padding-top: calc(var(--header-height) * 1.5);
-      width: 100%;
+      padding-bottom: 60px;
       height: calc(var(--vh));
-      background-color: var(--color-white);
+      background-color: var(--color-dark-900);
       transform: translateX(150%);
       transition-property: transform;
       transition-duration: 0.4s;
+      padding-right: 24px;
+      align-items: flex-start;
+      right: 0;
+      width: 50%;
+    }
+
+    @include media(mobile-l) {
+      width: 100%;
     }
   }
 
@@ -35,22 +40,34 @@
     align-items: center;
     margin: 0 auto;
 
-    @include media(mobile-l) {
+    @include media(tablet) {
       z-index: -1;
       flex-direction: column;
+      align-items: flex-end;
+      margin: 0 60px 0 0;
     }
+
+    @include media(mobile-s) {
+      align-items: flex-start;
+    }
+
+
   }
 
   &__item {
     &:not(:last-of-type, .footer .nav__item) {
       margin-right: rem(34);
 
-      @include media(mobile-l) {
+      @include media(desktop) {
+        margin-right: rem(14);
+      }
+
+      @include media(tablet) {
         margin-right: 0;
       }
     }
 
-    @include media(mobile-l) {
+    @include media(tablet) {
       margin-bottom: 30px;
     }
   }
@@ -62,6 +79,10 @@
     &.true {
       border-bottom: 2px solid var(--color-white);
     }
+
+    @include media(desktop) {
+      font-size: 16px;
+    }
   }
 
   &__btns {
@@ -69,11 +90,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 0 24px;
-  }
 
-  .btn {
-    @include media(mobile-l) {
-      margin: 0 auto;
+    @include media(tablet) {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 30px;
     }
   }
 
@@ -81,10 +102,6 @@
     .logo {
       max-width: 150px;
     }
-
-  }
-
-  @include media(mobile-l) {
 
   }
 }

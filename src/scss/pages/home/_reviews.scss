@@ -5,14 +5,6 @@
   overflow: hidden;
   padding: rem(64) 0 rem(174);
 
-  &__desc {
-    margin-bottom: rem(78);
-    font-family: var(--font-family-secondary);
-    font-weight: var(--fw-400);
-    font-size: clamp(64px, 2rem + 1vi, 72px);
-    line-height: 1.2;
-  }
-
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -20,10 +12,12 @@
   }
 
   &__item {
-    max-width: 416px;
-    width: 100%;
     display: flex;
     flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+    max-width: 416px;
+    width: 100%;
     overflow: hidden;
   }
 
@@ -56,5 +50,35 @@
   img {
     border-radius: var(--radius-main);
     margin-right: 16px;
+  }
+
+  @include media(tablet-wide) {
+    padding: rem(64) 0 0;
+  }
+
+  @include media(tablet) {
+    padding: rem(40) 0 rem(40);
+
+    &__desc {
+      margin-bottom: rem(40);
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__grid {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 1fr;
+      gap: 60px 0;
+      justify-items: center;
+    }
   }
 }

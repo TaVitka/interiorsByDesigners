@@ -73,4 +73,15 @@
        background-color: transparent;
      }
    }
+
+   @include media(desktop) {
+     min-width: unset;
+     max-width: unset;
+     padding: 18px;
+     font-size: 18px;
+
+     &--arrow {
+       padding-right: rem(60);
+     }
+   }
  }

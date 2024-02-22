@@ -11,13 +11,7 @@
     width: 100%;
   }
 
-  &__desc {
-    margin-bottom: rem(78);
-    font-family: var(--font-family-secondary);
-    font-weight: var(--fw-400);
-    font-size: clamp(64px, 2rem + 1vi, 72px);
-    line-height: 1.2;
-
+  .decorated {
     span {
       color: var(--color-cream-600);
     }
@@ -28,12 +22,16 @@
     align-items: center;
   }
 
+  label,
   input,
   textarea {
     display: block;
-    min-width: 534px;
     max-width: 534px;
     width: 100%;
+  }
+
+  input,
+  textarea {
     border: 1px solid var(--color-white);
     padding: 18px 32px;
     height: 60px;
@@ -79,5 +77,13 @@
     .btn {
       max-width: unset;
     }
+  }
+
+  @include media(tablet) {
+    padding: rem(40) 0 rem(40);
+  }
+
+  @include media(mobile-l) {
+
   }
 }

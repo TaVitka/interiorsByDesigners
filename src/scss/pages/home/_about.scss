@@ -26,4 +26,23 @@
       height: 100%;
     }
   }
+
+  @include media(tablet-wide) {
+    &__box {
+      padding-bottom: rem(60);
+    }
+
+    &__image {
+      min-height: unset;
+      padding-bottom: rem(40);
+
+      img {
+        bottom: rem(20);
+      }
+    }
+  }
+
+  @include media(tablet) {
+    padding: rem(40) 0 0;
+  }
 }
