@@ -64,18 +64,32 @@
       flex-direction: column;
       align-items: stretch;
     }
+
     .request__form-field {
       justify-content: space-between;
+      gap: 32px;
       margin-bottom: 32px;
     }
 
+    label,
     input {
-      max-width: 632px;
-      min-width: 632px;
+      max-width: unset;
     }
 
     .btn {
       max-width: unset;
+    }
+
+    @include media(tablet) {
+      .request__form-field {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-field,
+      input {
+
+      }
     }
   }
 

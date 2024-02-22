@@ -6,7 +6,7 @@
   background: var(--color-white);
 
   .title {
-    margin-bottom: 64px;
+    margin-bottom: clamp(30px, 2rem + 2vi, 64px);
   }
 
   &__item {
@@ -64,5 +64,9 @@
 
   a {
     margin: 0 auto;
+  }
+
+  @include media(tablet) {
+    padding: rem(40) 0;
   }
 }

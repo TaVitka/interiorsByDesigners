@@ -16,15 +16,8 @@ const swiperExplore = new Swiper('.explore__slider', {
   },
   pagination: {
     el: '.explore__slider .swiper-pagination',
+    clickable: true,
   },
-  // breakpoints: {
-  //   992: {
-  //     slidesPerView: 3,
-  //   },
-  //   650: {
-  //     slidesPerView: 2,
-  //   },
-  // },
 });
 
 // links from <a> to target slide
