@@ -188,6 +188,20 @@
     }
   }
 
+  @include media(desktop-wide, min) {
+    background-position: 0 100%;
+
+    &--page {
+      background-position: 100% 100%;
+      background-size: contain;
+    }
+
+    &--portfolio {
+      background-position: 0 100%;
+      margin-bottom: 0;
+    }
+  }
+
   @include media(tablet-wide) {
     padding: rem(70) 0 rem(70);
     margin-bottom: 0;
