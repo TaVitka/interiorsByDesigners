@@ -15,10 +15,19 @@ tabButtons.forEach((tab, index) => {
 
 tabsContainer.addEventListener('click', e => {
   const clickedTab = e.target.closest('a');
+  const allTabs = tabsContainer.querySelectorAll('a');
+
   if (!clickedTab) return;
   e.preventDefault();
 
   switchTab(clickedTab);
+
+  allTabs.forEach(tab => {
+    tab.classList.remove('selected');
+  });
+  clickedTab.classList.add('selected');
+
+
 });
 
 function switchTab(newTab) {

@@ -23,12 +23,9 @@
     }
 
     @include media(tablet) {
-      justify-content: space-between;
-    }
-
-    @include media(mobile-l) {
       display: grid;
       grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       gap: 20px 0;
     }
   }

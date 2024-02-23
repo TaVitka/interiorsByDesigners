@@ -9,6 +9,35 @@
     margin-bottom: rem(78);
   }
 
+  //moved need to check if not broken
+  .slide {
+    text-align: center;
+    background: var(--color-cream-400);
+
+    &__title {
+      width: 100%;
+      margin-bottom: 30px;
+      font-weight: var(--fw-700);
+      color: var(--color-black);
+      font-size: clamp(18px, 1rem + 1vi, 24px);
+    }
+
+    &__image {
+      margin-bottom: 30px;
+    }
+
+    &__subtitle {
+      margin-bottom: 16px;
+      font-weight: var(--fw-600);
+      color: var(--color-black);
+      font-size: clamp(18px, 0.5rem + 1vi, 20px);
+    }
+
+    &__desc {
+      color: var(--color-black-50);
+    }
+  }
+
   &__inner {
     display: flex;
     align-items: center;
@@ -70,8 +99,8 @@
   }
 }
 
-.explore__slider {
-    .slider {
+
+.slider {
       margin-bottom: 30px;
 
       &__nav {
@@ -120,45 +149,20 @@
       }
 
       &__pagination {
-        .swiper-pagination-bullet {
-          width: 16px;
-          height: 16px;
-          margin-left: 16px;
-          margin-right: 16px;
-          background: var(--color-brown-400);
+        &.swiper-pagination-horizontal.swiper-pagination {
+          bottom: auto;
+
+          .swiper-pagination-bullet {
+            width: 16px;
+            height: 16px;
+            margin-left: 16px;
+            margin-right: 16px;
+            background: var(--color-brown-400);
+          }
+        }
+
+        @include media(tablet) {
+          margin-bottom: rem(20);
         }
       }
-
-      @include media(tablet) {
-        margin-bottom: rem(20);
-      }
     }
-
-    .slide {
-      text-align: center;
-      background: var(--color-cream-400);
-
-      &__title {
-        width: 100%;
-        margin-bottom: 30px;
-        font-weight: var(--fw-700);
-        color: var(--color-black);
-        font-size: clamp(18px, 1rem + 1vi, 24px);
-      }
-
-      &__image {
-        margin-bottom: 30px;
-      }
-
-      &__subtitle {
-        margin-bottom: 16px;
-        font-weight: var(--fw-600);
-        color: var(--color-black);
-        font-size: clamp(18px, 0.5rem + 1vi, 20px);
-      }
-
-      &__desc {
-        color: var(--color-black-50);
-      }
-    }
-}
