@@ -3,13 +3,17 @@
 
 .portfolio {
   background: var(--gradient-primary);
-  padding: 0 0 rem(156);
+  padding: rem(156) 0;
 
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: rem(48);
+  }
+
+  &__image {
+    overflow: hidden;
   }
 
   img {
@@ -24,6 +28,10 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
+    }
+
+    img {
+      transform: scale(1.5);
     }
   }
 }

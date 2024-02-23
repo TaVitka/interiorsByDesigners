@@ -3,16 +3,9 @@
 
 .hero {
   $root: &;
-  margin-bottom: 72px;
-  padding: 0 0 rem(128);
+  margin-bottom: rem(178);
+  padding: 0;
   @include left-background;
-
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    overflow: hidden;
-  }
 
   &__content {
     display: flex;
@@ -22,6 +15,8 @@
     width: 100%;
     max-width: 1076px;
     color: var(--color-white);
+    overflow: hidden;
+    margin-left: auto;
 
     @include media(tablet-wide) {
       justify-content: space-around;
@@ -39,7 +34,17 @@
   }
 
   &__info {
-    max-width: 416px;
+    max-width: 417px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding: 45px 0 0;
+
+    @include media(desktop) {
+      padding: 0;
+    }
 
     @include media(mobile-l) {
       grid-column-start: 2;
@@ -83,7 +88,7 @@
 
   &--page {
     margin-bottom: 0;
-    padding: rem(86) 0 rem(152);
+    padding: 0 0 rem(152);
     @include hero-background;
 
     #{$root}__content {
@@ -145,7 +150,7 @@
   }
 
   &--services {
-    padding: rem(160) 0 rem(258);
+    padding: 0 0 rem(258);
   }
 
   &--portfolio {
@@ -155,9 +160,11 @@
     min-height: 650px;
 
     .hero__inner {
-      padding-right: rem(48);
-      padding-top: rem(48);
+      display: flex;
+      flex-direction: column;
       align-items: flex-end;
+      padding-right: rem(96);
+      padding-top: rem(100);
     }
 
     @include media(tablet) {
@@ -176,11 +183,11 @@
   }
 
   &--works {
-    padding: rem(64) 0;
+    padding: 0 0 rem(64);
     min-height: 710px;
 
     .hero__inner {
-      padding-top: rem(36);
+      padding-top: rem(64);
     }
 
     @include media(mobile-m) {
@@ -226,11 +233,10 @@
 
   @include media(mobile-l) {
     padding: rem(40) 0 rem(40);
+    background-size: cover;
   }
 
   @include media(mobile-m) {
-    background-size: cover;
-
     &__subtitle {
       font-size: 20px;
     }

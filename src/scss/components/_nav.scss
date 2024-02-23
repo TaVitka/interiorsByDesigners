@@ -98,6 +98,11 @@
     }
   }
 
+  .logo {
+    max-width: 205px;
+    width: 100%;
+  }
+
   @include media(desktop) {
     .logo {
       max-width: 150px;

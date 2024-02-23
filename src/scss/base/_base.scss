@@ -44,7 +44,11 @@ body {
 }
 
 .main {
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) + rem(64));
+
+  @include media(desktop) {
+    padding-top: var(--header-height);
+  }
 }
 
 #form-request {
@@ -139,7 +143,7 @@ body {
   font-family: var(--font-family-secondary);
   font-weight: var(--fw-400);
   font-size: clamp(62px, 3rem + 6vi, 136px);
-  line-height: 1.5;
+  line-height: 1.2;
 
   &--reverse {
     color: var(--color-dark-900);

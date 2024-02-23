@@ -2,7 +2,7 @@
 @use "../utils/mixins/"as*;
 
 .services {
-  padding: rem(64) 0 rem(156);
+  padding: rem(64) 0;
   background-color: var(--color-cream-400);
 
   &__grid {
@@ -25,7 +25,9 @@
 
   &__text {
     color: var(--color-black-50);
-    margin-bottom: rem(26);
+    margin-bottom: rem(20);
+    padding: 0 10px;
+    line-height: 1.2;
   }
 
   img {
@@ -80,12 +82,6 @@
       font-size: 20px;
     }
 
-    &--portfolio {
-      padding: rem(40) 0;
-    }
-  }
-
-  @include media(mobile-l) {
     &__grid {
       display: flex;
       flex-wrap: wrap;
@@ -96,6 +92,12 @@
       max-width: 346px;
     }
 
+    &--portfolio {
+      padding: rem(40) 0;
+    }
+  }
+
+  @include media(mobile-l) {
     img {
       height: 250px;
     }
