@@ -45,4 +45,13 @@
   @include media(tablet) {
     padding: rem(40) 0 0;
   }
+
+  @include media(mobile-m) {
+    &__image {
+      img {
+        transform: scale(1.5) translateY(10px);
+        filter: none;
+      }
+    }
+  }
 }
