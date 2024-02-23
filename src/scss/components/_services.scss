@@ -14,6 +14,8 @@
   &__item {
     overflow: hidden;
     text-align: center;
+    max-width: 416px;
+    width: 100%;
   }
 
   article {
@@ -83,13 +85,11 @@
     }
 
     &__grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      grid-template-columns: repeat(2, 1fr);
     }
-
-    &__item {
-      max-width: 346px;
+    &__item--odd {
+      grid-column: 1 / span 2;
+      justify-self: center;
     }
 
     &--portfolio {
@@ -97,7 +97,16 @@
     }
   }
 
-  @include media(mobile-l) {
+  @include media(mobile-m) {
+    &__grid {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    &__item--odd {
+      grid-column: auto;
+    }
+
     img {
       height: 250px;
     }
