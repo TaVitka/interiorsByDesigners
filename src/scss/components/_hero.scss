@@ -174,10 +174,18 @@
     }
 
     @include media(mobile-m) {
-      min-height: 90vh;
+      min-height: 400px;
 
       .hero__inner {
         align-items: center;
+      }
+    }
+
+    @include media(mobile-s) {
+      min-height: 250px;
+
+      .hero__inner {
+        padding-top: 0;
       }
     }
   }
@@ -191,7 +199,15 @@
     }
 
     @include media(mobile-m) {
-      min-height: 90vh;
+      min-height: 400px;
+    }
+
+    @include media(mobile-s) {
+      min-height: 250px;
+
+      .hero__inner {
+        padding-top: 0;
+      }
     }
   }
 
