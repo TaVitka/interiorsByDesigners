@@ -30,8 +30,8 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
 
-    & + p {
-      margin-top: rem(42);
+    &:not(:last-of-type) {
+      margin-bottom: rem(42);
     }
   }
 
