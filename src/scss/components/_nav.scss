@@ -21,7 +21,7 @@
       padding-bottom: 60px;
       height: calc(var(--vh));
       background-color: var(--color-dark-900);
-      box-shadow: -6px 0 30px 0 rgb(255 255 255 / 30%);
+      box-shadow: var(--shadow-white);
       transform: translateX(150%);
       transition-property: transform;
       transition-duration: 0.4s;
@@ -38,6 +38,7 @@
     }
 
     @include media(mobile-m) {
+      box-shadow: none;
       width: 100%;
     }
 
