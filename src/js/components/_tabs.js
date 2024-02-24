@@ -1,9 +1,9 @@
 const tabsContainer = document.querySelector('.tabs');
-const tabsList = tabsContainer.querySelector('.tabs__nav');
-const tabButtons = tabsList.querySelectorAll('a');
-const tabPanels = tabsContainer.querySelectorAll('.tabs__pane > div');
+const tabsList = tabsContainer?.querySelector('.tabs__nav');
+const tabButtons = tabsList?.querySelectorAll('a');
+const tabPanels = tabsContainer?.querySelectorAll('.tabs__pane > div');
 
-tabButtons.forEach((tab, index) => {
+tabButtons?.forEach((tab, index) => {
   tab.setAttribute('role', 'tab');
   if (index === 0) {
     tab.classList.add('selected');
@@ -13,7 +13,7 @@ tabButtons.forEach((tab, index) => {
   }
 });
 
-tabsContainer.addEventListener('click', e => {
+tabsContainer?.addEventListener('click', e => {
   const clickedTab = e.target.closest('a');
   const allTabs = tabsContainer.querySelectorAll('a');
 
@@ -34,7 +34,7 @@ function switchTab(newTab) {
   const activePanelId = newTab.getAttribute('href');
   const activePanel = tabsContainer.querySelector(activePanelId);
 
-  tabPanels.forEach(panel => {
+  tabPanels?.forEach(panel => {
     panel.setAttribute('hidden', true);
   });
 

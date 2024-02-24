@@ -37,11 +37,16 @@
 
   ul {
     padding-left: 12px;
+    margin-bottom: rem(42);
   }
 
   li {
     color: var(--color-dark-900);
     padding-left: 4px;
+
+    &:not(:last-of-type) {
+      margin-bottom: rem(10);
+    }
 
     &::marker {
       content: "✓";

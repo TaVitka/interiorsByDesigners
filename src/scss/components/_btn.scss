@@ -2,10 +2,10 @@
  @use "../utils/functions/"as*;
  @use "../utils/mixins"as*;
 
- .btn {
+ *[class].btn {
    position: relative;
    border: 1px solid var(--color-white);
-   padding: 16px rem(28);
+   padding: 17px rem(28);
    min-width: 140px;
    max-width: 240px;
    font-weight: var(--fw-500);
@@ -23,7 +23,16 @@
           background-color: var(--color-white);
    }
 
-   &--arrow {
+   &.formsapp-popup-button {
+     font-family: var(--font-family-primary);
+     font-weight: var(--fw-500);
+     border: 1px solid var(--color-white);
+     padding: 17px rem(28);
+     border-radius: 0;
+   }
+
+   &--arrow ,
+   &--arrow.formsapp-popup-button {
      position: relative;
      padding-right: rem(60);
      max-width: unset;
@@ -62,7 +71,8 @@
      }
    }
 
-   &--reverse {
+   &--reverse,
+   &--reverse.formsapp-popup-button {
      color: var(--color-black);
      background-color: var(--color-white);
 
@@ -71,6 +81,15 @@
        border-color: var(--color-white);
        color: var(--color-white);
        background-color: transparent;
+     }
+   }
+
+   &--reverse.formsapp-popup-button {
+     color: var(--color-black) !important;
+
+     &:hover,
+     &:not(.slick-arrow):focus {
+       color: var(--color-white) !important;
      }
    }
 

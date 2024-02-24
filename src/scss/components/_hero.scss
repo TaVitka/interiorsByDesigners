@@ -68,18 +68,24 @@
     font-size: 18px;
   }
 
-  &__btn {
+  &__btn[class],
+  &__btn[class].formsapp-popup-button {
     font-weight: var(--fw-500);
     font-size: 32px;
     border-width: 4px;
-    padding: 38px rem(100) 38px rem(28);
+    padding: 36px rem(100) 36px rem(28);
     max-width: 420px;
     width: 100%;
+    line-height: 1;
 
     &::after {
       right: rem(28);
       width: 64px;
       height: 64px;
+    }
+
+    @include media(desktop-wide, min) {
+      padding: 38px 110px 38px 35px;
     }
   }
 
@@ -230,7 +236,8 @@
       margin-bottom: rem(40);
     }
 
-    &__btn {
+    &__btn[class],
+    &__btn[class].formsapp-popup-button {
       font-size: 20px;
       border-width: 2px;
       padding: 20px rem(42) 20px 16px;
